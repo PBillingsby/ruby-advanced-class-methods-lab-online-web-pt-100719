@@ -45,7 +45,12 @@ class Song
   end
   
   def create_from_filename(filename)
-    
+    new_arr = filename.split(" - ")
+    new_arr[1] = new_arr[1].chomp(".mp3")
+    song = self.new
+    song.artist_name = new_arr[0]
+    song.name = new_arr[1]
+    song.save
   end
   def self.all
     @@all
