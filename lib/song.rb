@@ -52,6 +52,10 @@ class Song
     song.name = new_arr[1]
     song.save
   end
+  
+  def self.destroy_all
+    @@all = []
+  end
   def self.all
     @@all
   end
