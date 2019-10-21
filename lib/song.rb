@@ -39,8 +39,8 @@ class Song
     new_arr = new_song.split("-")
     new_arr[1] = new_arr[1].chomp(".mp3")
     song = self.new
-    song.name = new_arr[0]
-    song.title = new_arr[1]
+    song.artist_name = new_arr[0]
+    song.name = new_arr[1]
     song
   end
  
