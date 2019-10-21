@@ -41,6 +41,7 @@ class Song
     new = song.new
     song.name = new_arr[0]
     song.title = new_arr[1]
+    song
   end
  
   def self.all
