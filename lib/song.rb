@@ -43,6 +43,8 @@ class Song
     song.name = new_arr[1]
     song
   end
+  
+  def create_from_filename(song_create)
  
   def self.all
     @@all
